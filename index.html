@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Web Scraper</title>
+      <style>
+         body {
+            margin: 0;
+            padding: 0;
+            background-color: #060818;
+         }
+         .logo {
+            color:white;
+            font-size: 50px;
+            width: 350px;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            top:150px;
+         }
+         .button{
+            width: 340px;
+            height: 200px;
+            margin: auto;
+            position: relative;
+            top: 80px;
+         }
+         .button input[type=button]{
+            width:150px;
+            height: 40px;
+            font-size: 16px;
+            background-color: #060818;
+            border-color:#888EA8;
+            color:#BFC9D4;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="logo">~WebScraper~</div>
+      <div class="button">
+         <input type="button" value="Linkleri Çek" onclick="window.setTimeout(function(){location.href = 'http://localhost:4444/scrape';});">
+         <input type="button" value="Site Ekle" onclick="window.setTimeout(function(){location.href = 'http://localhost:4444/add';});">
+      </div>
+
+   </body>
+</html>
