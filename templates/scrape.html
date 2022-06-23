@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Web Scraper</title>
+        <style>
+            body {
+                background-color: #060818;
+            }
+            .lis {
+                width: 96%;
+                height: 40px;
+                border:1px solid #191E3A;
+                font-size: 17px;
+                color:White;
+                align-items:center
+            }
+            h1{
+                text-align: center;
+                color:magenta;
+            }
+            h2{
+                text-align: center;
+                color:white;
+            }
+            .lis a{
+                position: relative;
+                top:10px;
+                left:15px;
+                color:#E0E6ED;
+                text-decoration: none;
+            }
+            .lis a:hover{
+                color:magenta;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web Scaper İle Çekilen Siteler</h1>
+        <h2>Toplam {{ toplam }} link çekildi</h2><br><br>
+        {% for new in news %}
+            <div class="lis">
+                <a target="_blank" href="{{ new }}">{{ new }}</a>
+            </div><br>
+        {% endfor %}
+    </body>
+</html>
